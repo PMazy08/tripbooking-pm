@@ -10,7 +10,7 @@ export const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 app.use("/", index);
-app.use("/trip", trip);
+app.use("/trips", trip);
 app.use("/upload", upload);
 app.use("/uploads", express.static("uploads"));
 
